@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/output.css">
 </head>
 
-<body class="bg-vert font-mediametrie h-screen">
+<body class="bg-white font-mediametrie">
 <!-- The Modal -->
 <div id="myModal" class="modal">
     <div class="modal-content w-4/5 md:w-2/5 md:mt-12">
@@ -42,17 +42,18 @@
 
 </div>
 
-<div class="w-full flex flex-wrap bg-white">
+<div  class="w-full flex flex-wrap">
     <!-- Image Section -->
-    <div class="hidden md:block md:w-1/2 " style="background: url('img/background.png') center;   background-size: cover;">
+    <div id="image-bg" class="hidden md:block md:w-1/2" style="background: url('img/background.png') 25% 75%; background-size: cover; min-height: 80vh;">
 
     </div>
 
     <!-- Login Section -->
     <div class="w-full md:w-1/2 flex flex-col">
         <div class="flex justify-center md:justify-center lg:pt-4 md:pt-2">
-            <a href="https://www.mediametrie.fr/fr" target="_blank"> <img alt="" class="lg:w-36 md:w-24 w-32" src="img/logo_mediametrie.png"></a>
-            <img alt="" class="object-cover object-top md:hidden" src="img/background-mobile.png">
+            <a href="https://www.mediametrie.fr/fr" target="_blank">
+                <img alt="" class="lg:w-36 md:w-24 w-32" src="img/logo_mediametrie.png">
+            </a>
         </div>
         <img src="img/cercle-left.svg" class="hidden md:block absolute top-16 md:w-18 lg:w-24" alt="">
         <img src="img/cercle-top.svg" class="hidden md:block absolute right-0 md:h-16 lg:h-24" alt="">
@@ -63,7 +64,7 @@
                 <span>1er pas - <br>Créer mon compte paneliste</span>
                 <img src="img/icon-fleche.svg" class="w-10 h-10 ml-6 -mr-1" alt="">
             </a>
-            <p class=" text-center text-lg md:text-lg lg:text-xl mt-16 md:mt-24 md:mb-4 mb-2">Sélectionnez une notice</p>
+            <p class=" text-center text-lg md:text-lg lg:text-xl mt-16 md:mt-18 md:mb-4 mb-2">Sélectionnez une notice</p>
 
             <div class="md:flex text-center mb-4">
                 <a href="#" target="_blank" class="md:m-2 m-6 block md:w-2/5 md:p-6 px-24 py-4 bg-white border border-vert hover:bg-gray-100">
@@ -85,22 +86,22 @@
 </div>
 
 <!-- Footer -->
-<div class="bg-vert mt-8 md:mt-0">
-    <div class="max-w-2xl mx-auto text-white py-10">
+<div id="footer" class="bg-vert mt-8 md:mt-0">
+    <div class="max-w-2xl mx-auto text-white py-2">
         <div class="text-center flex justify-center mt-2">
-            <img alt="" class="lg:w-32 md:w-24 w-24 mx-auto" src="img/logo_mediametrie_blanc.png">
+            <img alt="" class="lg:w-28 md:w-24 w-24 mx-auto" src="img/logo_mediametrie_blanc.png">
         </div>
         <div class="text-center text-sm md:text-base md:px-0 px-16">
             <p> Référence de la mesure d’audience des médias en France </p>
         </div>
-        <div class="mt-7 flex flex-col  items-center text-sm">
+        <div class=" flex flex-col  items-center text-sm">
             <div class="order-1 ">
                 <a href="mailto:panel@mediametrie.fr"><span class="px-2">panel@mediametrie.fr</span></a>
                 <span class="px-2 border-l">0.800.227.000</span>
             </div>
         </div>
-        <div class="mt-14 flex flex-col md:flex-row md:justify-between items-center text-sm">
-            <p class="order-2 md:order-1 mt-8 md:mt-0"> &copy; Médiamétrie, 2022. </p>
+        <div class=" flex flex-col md:flex-row md:justify-between items-center text-sm mt-8 md:mt-4">
+            <p class="order-2 md:order-1"> &copy; Médiamétrie, 2022. </p>
             <div class="order-1 md:order-2">
                 <a href="" target="_blank"><span class="px-2">Mentions légales</span></a>
                 <a href="" target="_blank"><span class="px-2 border-l">C.G.U</span></a>
